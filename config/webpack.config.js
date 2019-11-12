@@ -93,6 +93,12 @@ module.exports = function(webpackEnv) {
         options: cssOptions,
       },
       {
+        loader: 'sass-loader',
+        options: {
+          sourceMap: true,
+        },
+      },
+      {
         // Options for PostCSS as we reference these options twice
         // Adds vendor prefixing based on your specified browser support in
         // package.json

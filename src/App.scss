@@ -102,15 +102,13 @@ a:hover {
 }
 
 .cs-logo {
-  text-align: center
-}
-
-.cs-logo svg {
-  vertical-align: top
-}
-
-.cs-logo a {
-  display: block
+  text-align: center;
+  svg {
+    vertical-align: top;
+  }
+  a {
+    display: block
+  }
 }
 
 .cs-logo a:focus,
@@ -129,66 +127,59 @@ a:hover {
   font-size: 1rem;
   display: inline-block;
   padding: 38px 20px;
-  transition: color .3s ease
-}
-
-.cs-nav--link:focus,
-.cs-nav--link:hover {
-  color: #2a3b8f;
-  outline: 0
+  transition: color .3s ease;
+  &:focus,:hover {
+    color: #2a3b8f;
+    outline: 0
+  }
 }
 
 .cs-profile-link {
   position: relative;
   cursor: pointer;
-}
-
-.cs-profile-link > .cs-user-profile-menu {
-  display: none;
-  background-color: #fff;
-  position: absolute;
-  right: 0;
-  z-index: 9999;
-  border-radius: 20px;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  margin: 0;
-  padding: 10px;
-  width: 100%;
-  list-style-type: none;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s;
-}
-
-.cs-profile-link:hover > .cs-user-profile-menu {
-  display: block;
-  width: 100%;
-  transition: 0s, 0s, 0.3s;
-}
-
-.cs-icon svg {
-  width: 90px;
-  height: 104px
+  .cs-user-profile-menu {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    list-style-type: none;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s;
+  }
+  &:hover > .cs-user-profile-menu {
+    display: block;
+    width: 100%;
+    transition: 0s, 0s, 0.3s;
+  }
 }
 
 .cs-icon {
-  padding-left: 30px
+  padding-left: 30px;
+  svg {
+    width: 90px;
+    height: 104px
+  }
 }
 
 .cs-auth0--footer {
   background-color: #2a3b8f;
   color: #fff;
-  padding: 30px 0
-}
-
-.cs-auth0--footer a {
-  color: #b7c2ff;
-  padding: 4px 0;
-  display: inline-block
-}
-
-.cs-auth0--footer a:hover {
-  text-decoration: underline;
-  color: #fff
+  padding: 30px 0;
+  a {
+    color: #b7c2ff;
+    padding: 4px 0;
+    display: inline-block;
+    &:hover {
+      text-decoration: underline;
+      color: #fff
+    }
+  }
 }
 
 .cs-auth0--footer-nav {
@@ -232,11 +223,10 @@ a:hover {
 
 .cs-auth0--footer-nav--list {
   margin: 0;
-  padding: 0
-}
-
-.cs-auth0--footer-nav--list li {
-  list-style: none
+  padding: 0;
+  li {
+    list-style: none
+  }
 }
 
 .cs-auth0--footer-nav--title {
@@ -250,19 +240,6 @@ a:hover {
   position: relative;
   width: 100%;
   height: calc(100vh - 100px)
-}
-
-.cs-auth0-login--section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%
-}
-
-.cs-auth0-login--section {
-  position: absolute;
-  top: 0
 }
 
 @media (min-width:576px) {
